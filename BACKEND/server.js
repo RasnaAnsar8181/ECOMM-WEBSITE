@@ -19,6 +19,7 @@ const veg_router = require('./router/veg-router')
 const cleaning_router = require('./router/cleaning-router')
 const dairy_router = require('./router/dairy-router')
 const cart_router = require('./router/cart-router')
+// const { default: Admin } = require('../ADMIN-PANEL/src/Admin')
 
 
 
@@ -31,6 +32,7 @@ app.use('/veg',veg_router)
 app.use('/cleaning',cleaning_router)
 app.use('/dairy',dairy_router)
 app.use('/cart',cart_router)
+// app.use('/admin',Admin)
 
 port = 8080
 app.listen(port,()=>{
